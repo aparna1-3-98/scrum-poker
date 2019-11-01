@@ -1,0 +1,66 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login Form Tutorial</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        .login-form {
+            width: 300px;
+            margin: 0 auto;
+            font-family: Tahoma, Geneva, sans-serif;
+            height:300px;
+        }
+
+            .login-form h1 {
+                text-align: center;
+                color: #4d4d4d;
+                font-size: 24px;
+                padding: 20px 0 20px 0;
+            }
+
+            .login-form input[type="password"],
+            .login-form input[type="text"] {
+                width: 100%;
+                padding: 15px;
+                border: 1px solid #dddddd;
+                margin-bottom: 15px;
+                box-sizing: border-box;
+            }
+
+
+
+        form {
+            font-size: 15px;
+        }
+
+        .login-form input[type="radio"] {
+            padding-bottom: 15px;
+        }
+    </style>
+</head>
+<body style="background-image:url('/views/images/porker.jpg');">
+    <div class="login-form">
+        <h1>Login Form</h1>
+        <form action="auth" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            Role &nbsp;&nbsp;&nbsp;:
+            <label class="radio-inline" style="padding-left:30px;">
+                <input type="radio" name="role" value="owner" />Owner
+            </label style="padding-left:30px;">
+            <label class="radio-inline" style="padding-left:30px;">
+                <input type="radio" name="role" value="developer" />Developer
+            </label><br /><br />
+            <input type="submit" class="btn btn-info" value="SUBMIT" style="width:300px;">
+        </form>
+    </div>
+</body>
+</html>

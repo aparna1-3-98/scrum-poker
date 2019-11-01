@@ -1,0 +1,40 @@
+<html>
+ <head>
+ <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Points</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style type="text/css">
+    .bs-example{
+    	margin: 20px;
+    }
+</style>
+ </head>
+ <body>
+ <div class="bs-example">
+  <form action="vi" method="POST">
+   <table class="table table-striped">
+      <tr>
+	  <th>Title</th>
+	  <th>Discription</th>
+	  <th>Point</th>
+	  </tr>
+	  <% resul.forEach(function(result){%>
+	  <tr>
+		<td> <%= result.title %> </td>
+		<td> <%= result.discription %> </td>
+		<td><%= result.value %></td>
+	  </tr>
+	  <%}) %>
+	  <tr>
+	  <td colspan="3" style="text-align:center;"><input type="Submit" value="HOME" class="btn btn-info"></td>
+	  </tr>
+   </table>
+</form>
+</div>
+ </body>
+</html>
